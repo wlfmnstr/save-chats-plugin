@@ -7,6 +7,8 @@ import { createServer } from 'http';
 const app = express();
 const port = 3000;
 app.use(express.json());
+//static setup
+app.use(express.static('public'));
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Hello World!');
