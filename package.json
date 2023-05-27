@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "build": "npm install",
-    "start": "ts-node server.ts",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
