@@ -1,11 +1,12 @@
 import express from "express";
+import path from "path";
 
 // Create a new Express app instance
 const app = express();
 
 // Add a route handler for the base URL
 app.get("/", (_req, res) => {
-  res.sendFile("index.html", { root: __dirname });
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 // Start the server
